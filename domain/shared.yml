@@ -1,0 +1,22 @@
+version: "3.1"
+
+slots:
+  return_value:
+    type: any
+    mappings:
+      - type: controlled
+
+  expense_amount:
+    type: text
+    mappings:
+      - type: controlled
+
+  expense_category:
+    type: text
+    mappings:
+      - type: controlled
+
+  expense_description:
+    type: text
+    mappings:
+      - type: controlled

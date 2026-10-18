@@ -1,0 +1,30 @@
+version: "3.1"
+
+actions:
+  - save_expense
+
+slots:
+  expense_amount:
+    type: text
+    mappings:
+      - type: from_llm
+
+  expense_category:
+    type: text
+    mappings:
+      - type: from_llm
+
+  expense_description:
+    type: text
+    mappings:
+      - type: from_llm
+
+responses:
+  utter_ask_expense_amount:
+    - text: "How much did you spend? For example, 12.50."
+
+  utter_ask_expense_category:
+    - text: "What category was this expense? For example, food, transport, or shopping."
+
+  utter_ask_expense_description:
+    - text: "What was this expense for? You can provide a short description."

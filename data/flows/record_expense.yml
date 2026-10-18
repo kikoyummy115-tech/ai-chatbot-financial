@@ -1,0 +1,9 @@
+flows:
+  record_expense:
+    name: record an expense
+    description: Record a user's spending with an amount, category, and optional description.
+    steps:
+      - collect: expense_amount
+      - collect: expense_category
+      - collect: expense_description
+      - action: save_expense
